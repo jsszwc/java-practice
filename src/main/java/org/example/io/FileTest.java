@@ -155,7 +155,7 @@ public class FileTest {
     }
 
     /**
-     * FileFilter接口
+     * FileFilter接口。FileFilter接口和FilenameFilter接口没啥关系
      */
     @Test
     public void testFileFilterInterface() {
