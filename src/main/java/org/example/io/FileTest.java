@@ -1,7 +1,6 @@
 package org.example.io;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,9 +1,11 @@
 package org.example.io;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.io.StringWriter;
 
 public class WriterTest {
 
@@ -23,4 +25,21 @@ public class WriterTest {
         }
     }
 
+    /**
+     * 实现类-StringWriter
+     * 以字符串作为写入的物理节点。因为String不能修改，底层实际使用的是StringBuffer
+     */
+    @Test
+    public void testStringWriter() {
+        try(
+                StringWriter sw = new StringWriter(20)
+        ) {
+            sw.write("aaaaaa\n");
+            sw.write("bbbbbb\n");
+            sw.write("cccccc\n");
+            System.out.println(sw);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

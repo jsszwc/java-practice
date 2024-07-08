@@ -1,7 +1,8 @@
 package org.example.io;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
